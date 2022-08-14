@@ -2,8 +2,10 @@
 
 Verilen döviz bilgilerinin görüntülenebilmesi, istenilen dövize göre çeviri yapılabilmesi, yapılan çevirilerin kayıtlarının db de tutulabilmesiyle alakalı işlemleri yapabilen bir projedir.
 
-# Servisler
-####Get latest 
+## Servisler
+
+### Get latest 
+
 **Verilen döviz bilgisinin diğer dövizlerde karşılığının görüntülenebilmesi**
 Örnek Request:
 * /get-latest?sourceCurrency=TRY&targetCurrencies=EUR,USD
@@ -14,7 +16,8 @@ Verilen döviz bilgilerinin görüntülenebilmesi, istenilen dövize göre çevi
 "rates":{"EUR":0.054321,"USD":0.055753}}}
 ```
 
-####Convert
+### Convert
+
 **Verilen dövizlerin miktarları arasında çevirinin yapılması**
 Örnek Request:
 * /convert?from=TRY&to=USD&amount=5
@@ -24,7 +27,8 @@ Verilen döviz bilgilerinin görüntülenebilmesi, istenilen dövize göre çevi
 "package":{"success":true,"query":{"from":"TRY","to":"USD","amount":5},"info":{"timestamp":1660469103,"rate":0.055753},"date":"2022-08-14","result":0.278765}}
 ```
 
-####Convert
+### Get Transactions
+
 **Daha önce çevirilmiş olan dövizlerin logların görüntülenebileceği servis**
 Örnek Request:
 * /get-transactions?createdAtStart=2021-08-11&createdAtEnd=2022-08-16
