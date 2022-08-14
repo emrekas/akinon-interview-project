@@ -7,8 +7,10 @@ Verilen döviz bilgilerinin görüntülenebilmesi, istenilen dövize göre çevi
 ### Get latest 
 
 **Verilen döviz bilgisinin diğer dövizlerde karşılığının görüntülenebilmesi**
+
 Örnek Request:
 * /get-latest?sourceCurrency=TRY&targetCurrencies=EUR,USD
+
 Örnek Response
 ```json
 {"status":true,
@@ -19,8 +21,10 @@ Verilen döviz bilgilerinin görüntülenebilmesi, istenilen dövize göre çevi
 ### Convert
 
 **Verilen dövizlerin miktarları arasında çevirinin yapılması**
+
 Örnek Request:
 * /convert?from=TRY&to=USD&amount=5
+
 Örnek Response
 ```json
 {"status":true,
@@ -30,8 +34,10 @@ Verilen döviz bilgilerinin görüntülenebilmesi, istenilen dövize göre çevi
 ### Get Transactions
 
 **Daha önce çevirilmiş olan dövizlerin logların görüntülenebileceği servis**
+
 Örnek Request:
 * /get-transactions?createdAtStart=2021-08-11&createdAtEnd=2022-08-16
+
 Örnek Response
 ```json
 {"status":true,
