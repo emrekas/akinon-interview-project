@@ -1,4 +1,4 @@
-# Akinon Interview Project - Currency API
+# Currency API
 
 Verilen döviz bilgilerinin görüntülenebilmesi, istenilen dövize göre çeviri yapılabilmesi, yapılan çevirilerin kayıtlarının db de tutulabilmesiyle alakalı işlemleri yapabilen bir projedir.
 
